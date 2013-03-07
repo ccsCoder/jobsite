@@ -14,6 +14,17 @@ body {
 	background:url(../images/bg-body.jpg);
 	font-size:12px;
 }
+.BigText {
+        color:#e49e06;
+	font-family:anticregular;
+	font-size:48px;
+	font-weight:400;
+	/*letter-spacing:.1em;*/
+	/*line-height:24px;*/
+	margin-bottom:3px;
+	text-align:center;
+	text-indent:110px;
+}
 a {
 	outline:none;
 }
