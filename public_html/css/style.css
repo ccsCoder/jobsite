@@ -94,7 +94,12 @@ p a:hover {
 #body {
 	margin:0 auto 97px;
 	/*min-height:1005px;*/
-	padding:38px 29px 0;
+	/*padding:38px 29px 0;*/
+        padding-top:38px;
+        padding-bottom:10px;
+        padding-left:29px;
+        padding-right: 29px;
+            
 	width:902px;
 }
 #body.home .blog {
@@ -142,7 +147,7 @@ p a:hover {
 }
 
 #body.home .article {
-	margin:63px 0 0;
+	margin:20px 0 0;
 	overflow:hidden;
 }
 #body.home .article div {
@@ -176,7 +181,7 @@ p a:hover {
 #body.home .article > img {
 	display:block;
 	float:right;
-	margin:0 44px 0 0;
+	margin:0 44px 40px 0;
 }
 #body.home .news {
 	overflow:hidden;
