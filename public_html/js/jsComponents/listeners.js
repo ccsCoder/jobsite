@@ -3,7 +3,7 @@
  * Class that is used to attach/detach events.
  */
 function EventHandlers() {
-    
+
 }
 
 EventHandlers.prototype.attachEvent = function(element,eventName,handler) {

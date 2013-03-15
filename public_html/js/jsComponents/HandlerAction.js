@@ -6,8 +6,3 @@ function Action () {
     this.elementReference = undefined;
     this.actionMethod = undefined;
 }
-
-/**
- * Action Handlers Reference
- */
-
