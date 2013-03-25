@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <title>Immediate Joiner's, A job site with a goal</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="js/libs/jqModal-r14/jqModal.css" type="text/css">
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/libs/jqModal-r14/jqModal.js"></script>
         <script type="text/javascript" src="js/jsComponents/HandlerMethodDefs.js"></script>
         <script type="text/javascript" src="js/jsComponents/listeners.js"></script>
         <script type="text/javascript" src="js/applogic.js"></script>
-        
-        
-        
+
+
+
     </head>
     <body>
         <div id="header">
@@ -41,23 +42,19 @@
                 Serving Notice? Can join Immediately? <br/>
                 We want you !
             </div>
-            <!--<br/><br/>-->
-            <!--<br/><br/>-->
+
             <div class="blog">
-                <!--<img src="images/house.png" alt="">-->
-                <!--<img src="images/email_envelope.png" alt="">-->
                 <img src="images/envelope2_png.png" alt="">
                 <div>
-                    
                     <h3>Register Now !</h3>
                     <p>
                         We are a firm that caters specifically to people who are serving notice,
                         or are available to join another Company in a short span of time. You may want to
                         <br/>
                         <a href="readmore.html">Read More</a><br/>
-                        <input type="button" class="button" value="Register Now !"/> 
-                        <!--<input type="button" class="button" value="Read More" />-->
-                        
+                        <input type="button" class="button" value="Register Now !" id="registerNow"/> 
+
+
                     </p>
                 </div>
             </div>
@@ -67,32 +64,16 @@
                     <p>
                         Log In to see the Exciting Offers awaiting you.
                         <br/>
-                        <!--<a href="mission.html">Log In &gt;&gt</a>-->
-                        <input type="button" class="button" value="Log In"  />
+
+                        <input type="button" class="button" value="Log In" id="logIn"  />
                     </p>
-<!--                    <p>
-                        You can replace all this text with your own text. You can remove <br> any link to our website from this website template, you're free to <br> use this website template without linking back to us.
-                    </p>
-                    <p>
-                        If you're having problems editing this website template, then don't <br> hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-                    </p>-->
+
                 </div>
-                <!--<img src="images/nature-place-photo.png" width="285" height="200" alt="">-->
+
                 <img src="images/login-img.png" alt="">
-                <!--<img src="images/image001.png" alt="">-->
+
             </div>
-<!--            <div class="news">
-                <img src="images/eco-park.png" alt="">
-                <div>
-                    <h3>Can join IMMEDIATELY ?</h3>
-                    <p>
-                        
-                    </p>
-                    <p>
-                        If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
-                    </p>
-                </div>
-            </div>-->
+
         </div>
         <div id="footer">
             <div>
@@ -103,6 +84,26 @@
                     <a href="http://immediatejoiners.com/go/googleplus/" id="googleplus">google+</a> <a href="http://www.immediateJoiners.com/misc/contact" id="contact">contact</a> <a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a> <a href="http://immediateJoiners.com/go/twitter/" id="twitter">twitter</a>
                 </div>
             </div>
+        </div>
+        <!---- DOM for Login Page... -->
+        <div class="popup" id="loginPopup">
+             <form method="post" action="index.html" class="login">
+                <p>
+                    <label for="login">Email:</label>
+                    <input type="text" name="login" id="login" value="name@example.com">
+                </p>
+
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="4815162342">
+                </p>
+
+                <p class="login-submit">
+                    <button type="submit" class="login-button">Login</button>
+                </p>
+
+                <p class="forgot-password"><a href="index.html">Forgot your password?</a></p>
+            </form>
         </div>
     </body>
 </html>

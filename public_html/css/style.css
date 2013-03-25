@@ -561,3 +561,10 @@ p a:hover {
 	position:relative;
 	top:1px;
 }
+
+/* Popups... */
+.popup {
+    background: black;
+    opacity: 0.6;
+    display: none;
+}

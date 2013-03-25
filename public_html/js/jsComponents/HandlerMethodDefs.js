@@ -3,24 +3,38 @@
  */
 
 /**
+ * 
+ * @param {type} functionName
+ * @param {type} context
+ * @returns {unresolved}
+ */
+function executeFunctionByName(functionName, context /*, args */) {
+    var args = Array.prototype.slice.call(arguments, 2);
+    var namespaces = functionName.split(".");
+    var func = namespaces.pop();
+    for (var i = 0; i < namespaces.length; i++) {
+        context = context[namespaces[i]];
+    }
+    return context[func].apply(context, args);
+}
+
+/**
  * method to handle the logic click
  * @param {Event} event
  * @returns {}
  */
 function buttonClickHandler(event) {
-    console.log("click called on"+event.target.value);
-    
-    switch(event.target.value) {
-        case "Log In":
-            console.log("Login clicked.");
-            break;
-        case "Register Now !":
-            console.log("Register Now Clicked");
-            break;
-        default:
-            console.log("other buttons");
-    }
-    
-    
+    //console.debug(event);
+    //console.log(event.target.attributes.id.nodeValue);
+    executeFunctionByName(event.target.attributes.id.nodeValue,window,arguments);
 }
 
+function logIn(event) {
+    console.log("Log In Handler Called");
+    $('#loginPopup').jqm({modal: true});
+    $("#loginPopup").jqmShow();
+}
+
+function registerNow(event) {
+    console.log("Register Now Event Called");
+}
