@@ -491,7 +491,7 @@ p a:hover {
         background:url(../images/bg-footer.png) repeat-x;
 	height:40px;
         position:absolute;
-        bottom: 10px;
+        bottom: 0px;
         left:0;
         width: 100%;
         border-radius: 6px;
@@ -499,6 +499,7 @@ p a:hover {
         -webkit-border-radius: 6px;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
+        display:none;
         
         
 }
@@ -596,3 +597,29 @@ p a:hover {
     border: none;
     
 }
+
+/******** Social Bar ********/
+.buttonsWrap {
+    display:block;
+    float:left;
+    /*margin:10px;*/
+    position:fixed;
+    background:#F5F5F5;
+    width:50px;
+    padding:10px;
+    left:20px;
+    top: 150px;
+}
+
+
+.tweetmemeBtn, .facebookBtn, .stumbleUponBtn .googleplusBtn {
+    display:block;
+    float:left;
+}
+.facebookBtn {
+    margin:15px 0 10px 2px
+}
+.googleplusBtn {
+    margin:13px 0 0 0
+}
+
