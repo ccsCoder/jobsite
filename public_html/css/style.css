@@ -488,13 +488,24 @@ p a:hover {
 }
 /*------------------------- Footer ------------------------*/
 #footer {
-	background:url(../images/bg-footer.png) repeat-x;
+        background:url(../images/bg-footer.png) repeat-x;
 	height:40px;
+        position:absolute;
+        bottom: 10px;
+        left:0;
+        width: 100%;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        
+        
 }
 #footer div {
 	margin:0 auto;
 	padding:0 0px;
-	width:940px;
+	width:100%;
 }
 #footer div p {
 	color:#5bdee6;
@@ -505,6 +516,7 @@ p a:hover {
 #footer div .connect {
 	float:right;
 	padding:5px 0 0;
+        margin-right: 20px;
 	width:auto;
 }
 #footer div .connect a {
@@ -564,7 +576,23 @@ p a:hover {
 
 /* Popups... */
 .popup {
-    background: black;
-    opacity: 0.6;
     display: none;
+}
+
+.popup input[type="text"], .popup input[type="password"], .popup input[type="email"] {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    
+    height:20px;
+    width:150px;
+    border: 1px solid orange;
+}
+
+.popup table {
+    border-collapse: collapse;
+    border: none;
+    
 }

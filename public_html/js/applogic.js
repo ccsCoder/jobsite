@@ -3,9 +3,11 @@ var events = new EventHandlers();
 $(document).ready(function() {
     
     eventHandlers();
+    
 });
 
 function eventHandlers() {
+//    placeFooter();
     //for all buttons
     events.attachEvent($(":button"),"click",buttonClickHandler);
 }

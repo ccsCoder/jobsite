@@ -30,11 +30,33 @@ function buttonClickHandler(event) {
 }
 
 function logIn(event) {
-    console.log("Log In Handler Called");
-    $('#loginPopup').jqm({modal: true});
-    $("#loginPopup").jqmShow();
+    //console.log("Log In Handler Called");
+    $("#loginPopup").dialog({modal:true,
+                             title:'Log In',
+                             buttons:[{text:'LogIn',click: function(){
+                                         
+                             }},{text:'Cancel',click: function() {
+                                 $(this).dialog("close");
+                             }}],
+                             hide:'slideUp',
+                             show:'slideDown'
+                             });
 }
 
 function registerNow(event) {
-    console.log("Register Now Event Called");
+    //console.log("Register Now Event Called");
+    $("#registrationForm").dialog({modal:true,
+                             title:'Log In',
+                             buttons:[{text:'Register',click: function(){
+                                         
+                             }},{text:'Cancel',click: function() {
+                                 $(this).dialog("close");
+                             }}],
+                             hide:'slideUp',
+                             show:'slideDown'
+                             });
 }
+
+//function placeFooter() {
+//    $("#footer").css("position","fixed").position().left
+//}
